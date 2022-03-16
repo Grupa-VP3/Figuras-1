@@ -2,6 +2,7 @@
 # Izveidot katrā klasē metodi, kura sevi nosauc
 # Ārpus klasēm ciklā ar vienu metodi izdrukāt visu daudzstūru nosaukumus un malu skaitu
 # Darbu iesniegt txt formātā
+
 print("Sveicināti, meitenes no VP3!")
 class Figura:
   def __init__(self,vards,malas):
@@ -19,3 +20,4 @@ saraksts=[figura1,figura2,figura3]
 
 for i in saraksts:
     print(i.druka())
+
