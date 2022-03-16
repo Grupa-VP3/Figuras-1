@@ -1,0 +1,37 @@
+1. uzdevums
+
+1. jautājums
+Kurš SOLID princips netiks ievērots, rakstot objektorientēto programmu pēc šādiem noteikumiem:
+"Izveidot klases: kvadrātam, taisnstūrim, trijstūrim. Izveidot katrā klasē metodi, kura sevi nosauc. Ārpus klasēm ciklā ar vienu metodi izdrukāt visu daudzstūru nosaukumus un malu skaitu."?
+A. Viena atbildība
+B. Atvērts - aizvērts
+C. Liskova substitūcija
+D. Saskarņu sadalīšana
+E. Atkarību inversija
+
+2. jautājums
+Kā labāk definēt klases iepriekš minētajā uzdevumā, lai būtu ievērots atkarību inversijas princips?
+A. Nevar labāk
+B. Nav tāda principa
+C. Klases Trijsturis un Taisnsturis, kam apakšklase Kvadrats
+D. Klase Figura, kas satur figūras nosaukumu un malu skaitu un māk šo informāciju ar drukas metodes palīdzību nodot programmai izdrukāšanai
+
+2. uzdevums
+Programmas teksts:
+
+class Figura:
+  def __init__(self,vards,malas):
+    self.vards = vards
+    self.malas = malas
+  def druka(self):
+    dr=(f"Figūras nosaukums ir {self.vards}, malu skaits ir {self.malas}")
+    return dr
+        
+figura1=Figura("kvadrats","4")
+figura2=Figura("taisnsturis","4")
+figura3=Figura("trijsturis","3")
+
+saraksts=[figura1,figura2,figura3]
+
+for i in saraksts:
+    print(i.druka())
