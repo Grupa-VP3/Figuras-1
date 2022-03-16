@@ -2,7 +2,7 @@
 # Izveidot katrā klasē metodi, kura sevi nosauc
 # Ārpus klasēm ciklā ar vienu metodi izdrukāt visu daudzstūru nosaukumus un malu skaitu
 # Darbu iesniegt txt formātā
-print("Sveicināti, VP3!")
+print("Sveicināti, meitenes no VP3!")
 class Figura:
   def __init__(self,vards,malas):
     self.vards = vards
