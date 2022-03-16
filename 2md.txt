@@ -1,0 +1,16 @@
+class Figura:
+  def __init__(self,vards,malas):
+    self.vards = vards
+    self.malas = malas
+  def druka(self):
+    dr=(f"Figūras nosaukums ir {self.vards}, malu skaits ir {self.malas}")
+    return dr
+        
+figura1=Figura("kvadrats","4")
+figura2=Figura("taisnsturis","4")
+figura3=Figura("trijsturis","3")
+
+saraksts=[figura1,figura2,figura3]
+
+for i in saraksts:
+    print(i.druka())
